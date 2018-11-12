@@ -1,0 +1,5 @@
+<ul class='items'>
+  <li  (click) = 'onSelectDetails(department)' [class.selected]="isSelectedId(department)"  *ngFor="let department of departments">
+  <span class='badge'>{{department.id}}</span> :{{department.name}}
+</li>
+</ul>
