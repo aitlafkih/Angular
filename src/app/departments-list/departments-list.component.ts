@@ -26,14 +26,13 @@ export class DepartmentsListComponent implements OnInit {
   }
 
   onSelectDetails(department){
-    this.router.navigate(['/departments', department.id]);
+    //this.router.navigate(['/departments', department.id]);
+    this.router.navigate([department.id], {relativeTo: this.route});
 
   }
 
   isSelectedId(department){
     return department.id === this.selectedId;
-
   }
-
 
 }
